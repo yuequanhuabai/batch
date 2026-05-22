@@ -147,5 +147,14 @@ create table bnd_dw22bal_1(
   ttlday05 nvarchar(3) collate Latin1_General_100_CI_AS_SC_UTF8  null,
   exrate06 decimal(15,7) null,
   ttlday06 nvarchar(3) collate Latin1_General_100_CI_AS_SC_UTF8  null,
-
+  cifno  nvarchar(10) collate Latin1_General_100_CI_AS_SC_UTF8  null,
+  pcode nvarchar(6) collate Latin1_General_100_CI_AS_SC_UTF8  null,
+  acc_int   decimal(13,2) null,
+  acc_int_gg_item   nvarchar(10) collate Latin1_General_100_CI_AS_SC_UTF8  null,
+  gg_bk nvarchar(3) collate Latin1_General_100_CI_AS_SC_UTF8  null,
+  gg_bh nvarchar(3) collate Latin1_General_100_CI_AS_SC_UTF8  null,
+  gg_item nvarchar(10) collate Latin1_General_100_CI_AS_SC_UTF8  null,
+  rpc_product nvarchar(10) collate Latin1_General_100_CI_AS_SC_UTF8  null,
+  rpc_channel nvarchar(3) collate Latin1_General_100_CI_AS_SC_UTF8  null,
+    constraint pk_bnd_dw22bal_1 primary key (account_no,sec_code)
 )
